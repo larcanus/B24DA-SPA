@@ -29,6 +29,10 @@ const faqs = computed(() => [
     q: t('faq.q_focus'),
     a: t('faq.a_focus'),
   },
+  {
+    q: t('faq.q_mac_warning'),
+    a: t('faq.a_mac_warning'),
+  },
 ])
 </script>
 

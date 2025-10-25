@@ -42,6 +42,10 @@ export default {
 		repackager_step4: 'Open Chrome, go to chrome://extensions, enable "Developer mode".',
 		repackager_step5: 'Click "Load unpacked" and select the generated extension folder.',
 		repackager_note: 'Use the repackager if your Bitrix24 portal uses a non-standard address or local IP (e.g., 192.168.x.x).',
+		mac_warning_title: 'macOS: The app is not signed or notarized',
+		mac_warning_text: 'After the first launch, you may see a warning that the app cannot be opened because it is from an unidentified developer.',
+		mac_warning_step1: 'Open System Preferences → Security & Privacy.',
+		mac_warning_step2: 'Click "Open Anyway" to allow the app to run.',
 	},
 	faq: {
 		title: 'FAQ',
@@ -56,5 +60,7 @@ export default {
 		a_privacy: 'No, the extension works locally in your browser and does not collect or send any data.',
 		q_focus: 'How do I enable focus mode?',
 		a_focus: 'Click the focus icon in the chat interface to hide all unnecessary UI and concentrate on messaging.',
+		q_mac_warning: 'After installing the package on macOS, I get a warning: "Apple cannot check it for malicious software". What should I do?',
+		a_mac_warning: 'This is normal for unsigned apps. Open System Preferences → Security & Privacy and click "Open Anyway". The app does not contain malware and works only locally.',
 	},
 }

@@ -8,7 +8,7 @@ const { t } = useI18n()
     <h1>{{ t('download.title') }}</h1>
     <p>{{ t('download.description') }}</p>
     <div class="downloads">
-      <a class="download-btn" href="/files/extension.zip" download>
+      <a class="download-btn" href="/files/Bitrix24AD-extension.zip" download>
         <span class="icon">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M10 2v10m0 0l-4-4m4 4l4-4M4 16h12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -16,7 +16,7 @@ const { t } = useI18n()
         </span>
         {{ t('download.extension_btn') }}
       </a>
-      <a class="download-btn" href="/files/bitrix24-repackager-win.zip" download>
+      <a class="download-btn" href="/files/Bitrix24AD-repackager-win.zip" download>
         <span class="icon">
           <!-- Windows icon -->
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -29,7 +29,7 @@ const { t } = useI18n()
         {{ t('download.repackager_win_btn') }}
         <span class="btn-info">{{ t('download.repackager_win_info') }}</span>
       </a>
-      <a class="download-btn" href="/files/bitrix24-repackager-mac.zip" download>
+      <a class="download-btn" href="/files/Bitrix24AD-repackager-mac.dmg" download>
         <span class="icon">
           <!-- Apple icon -->
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -40,6 +40,14 @@ const { t } = useI18n()
         {{ t('download.repackager_mac_btn') }}
         <span class="btn-info">{{ t('download.repackager_mac_info') }}</span>
       </a>
+    </div>
+    <div class="mac-warning">
+      <strong>⚠️ {{ t('download.mac_warning_title') }}</strong>
+      <p>{{ t('download.mac_warning_text') }}</p>
+      <ol>
+        <li>{{ t('download.mac_warning_step1') }}</li>
+        <li>{{ t('download.mac_warning_step2') }}</li>
+      </ol>
     </div>
     <div class="instructions">
       <h2>{{ t('download.repackager_title') }}</h2>
@@ -89,6 +97,18 @@ const { t } = useI18n()
   font-size: 0.95rem;
   color: var(--text-secondary);
   font-weight: normal;
+}
+.mac-warning {
+  background: #2d1b4c;
+  color: #ffd6e0;
+  border-left: 4px solid #ff5f7e;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.mac-warning strong {
+  color: #ff5f7e;
 }
 .instructions {
   margin-top: 2rem;
