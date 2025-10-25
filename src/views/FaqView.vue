@@ -1,24 +1,85 @@
 <script setup>
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
+
+const open = ref(null)
+function toggle(idx) {
+  open.value = open.value === idx ? null : idx
+}
+
+const faqs = [
+  {
+    q: t('faq.q_install'),
+    a: t('faq.a_install'),
+  },
+  {
+    q: t('faq.q_repackager'),
+    a: t('faq.a_repackager'),
+  },
+  {
+    q: t('faq.q_voice'),
+    a: t('faq.a_voice'),
+  },
+  {
+    q: t('faq.q_privacy'),
+    a: t('faq.a_privacy'),
+  },
+  {
+    q: t('faq.q_focus'),
+    a: t('faq.a_focus'),
+  },
+]
 </script>
 
 <template>
   <section>
     <h1>{{ t('faq.title') }}</h1>
     <p>{{ t('faq.description') }}</p>
-    <ul>
-      <li><strong>Q:</strong> How to install the extension?<br><strong>A:</strong> Download and drag it to Chrome extensions page.</li>
-      <li><strong>Q:</strong> Where to get updates?<br><strong>A:</strong> Check the main page for the latest news.</li>
-    </ul>
+    <div class="faq-list">
+      <div
+          v-for="(item, idx) in faqs"
+          :key="idx"
+          class="faq-item"
+      >
+        <button class="faq-question" @click="toggle(idx)">
+          {{ item.q }}
+        </button>
+        <div
+            class="faq-answer"
+            v-show="open === idx"
+        >
+          {{ item.a }}
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <style scoped>
-ul {
-  margin-top: 1.5rem;
+.faq-list {
+  margin-top: 2rem;
 }
-li {
-  margin-bottom: 1rem;
+.faq-item {
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.8rem;
+}
+.faq-question {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+.faq-answer {
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  transition: all 0.2s;
 }
 </style>
