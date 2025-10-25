@@ -1,38 +1,44 @@
-# b24adSPA
+# B24ADSPA — Chrome Extension Support Site for Bitrix24
 
-This template should help get you started developing with Vue 3 in Vite.
+## About
 
-## Recommended IDE Setup
+This is a simple single-page web application (SPA) built with Vue 3, designed to support, distribute, and provide guidance for the Chrome extension for Bitrix24.  
+The site includes a user guide, FAQ, and download links for the extension and supporting tools.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Installation & Usage
 
-## Recommended Browser Setup
+1. **Clone the repository and install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
+   The production-ready files will be in the `dist/` folder.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Features
 
-## Customize configuration
+- **Multi-language:** Supports Russian and English. Switch languages using the button in the top right corner.
+- **Dark theme with purple accent:** Styled to match the extension's look and feel.
+- **Three main sections:**
+    - **Main:** Extension overview, user guide, list of "secret" features, and a changelog.
+    - **Download:** Download links for the extension and helper utilities for Windows and macOS.
+    - **FAQ:** Answers to common questions, including installation and macOS launch instructions.
+- **Downloadable files** are located in the `public/files/` directory:
+    - `Bitrix24AD-extension.zip` — the Chrome extension itself.
+    - `Bitrix24AD-repackager-win.zip` — helper utility for Windows.
+    - `Bitrix24AD-repackager-mac.dmg` — helper utility for macOS.
+- **macOS Notice:** The macOS app is not signed or notarized. On first launch, you may need to allow it manually via "System Preferences → Security & Privacy → Open Anyway".
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Updating Downloadable Files
 
-## Project Setup
+To update downloadable files, simply replace the relevant archives in the `public/files/` directory and redeploy the site.
 
-```sh
-npm install
-```
+## License
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+MIT (or specify your own)
