@@ -24,7 +24,6 @@ The site includes a user guide, FAQ, and download links for the extension and su
 ## Features
 
 - **Multi-language:** Supports Russian and English. Switch languages using the button in the top right corner.
-- **Dark theme with purple accent:** Styled to match the extension's look and feel.
 - **Three main sections:**
     - **Main:** Extension overview, user guide, list of "secret" features, and a changelog.
     - **Download:** Download links for the extension and helper utilities for Windows and macOS.
@@ -37,7 +36,7 @@ The site includes a user guide, FAQ, and download links for the extension and su
 
 ## Updating Downloadable Files
 
-To update downloadable files, simply replace the relevant archives in the `public/files/` directory and redeploy the site.
+Update downloadable files, with replace the relevant archives in the `public/files/` directory.
 
 ## License
 
