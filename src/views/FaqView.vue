@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
@@ -8,7 +8,7 @@ function toggle(idx) {
   open.value = open.value === idx ? null : idx
 }
 
-const faqs = [
+const faqs = computed(() => [
   {
     q: t('faq.q_install'),
     a: t('faq.a_install'),
@@ -29,7 +29,7 @@ const faqs = [
     q: t('faq.q_focus'),
     a: t('faq.a_focus'),
   },
-]
+])
 </script>
 
 <template>
