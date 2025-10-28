@@ -54,6 +54,10 @@ const { t } = useI18n()
         <li>v1.0 – {{ t('main.changelog_initial') }}</li>
       </ul>
     </div>
+
+    <div class="disclaimer">
+    {{t('main.disclaimer')}}
+    </div>
   </section>
 </template>
 
@@ -100,5 +104,11 @@ const { t } = useI18n()
 .updates ul {
   margin: 0;
   padding-left: 1.2rem;
+}
+.disclaimer {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #888;
+  text-align: center;
 }
 </style>

@@ -23,6 +23,7 @@ export default {
 		feature_focus_mode_desc: 'Скрывайте лишний интерфейс и сосредоточьтесь только на чате.',
 		feature_voice_input_title: 'Голосовой ввод в чатах Bitrix24',
 		feature_voice_input_desc: 'Диктуйте сообщения голосом прямо в чате Bitrix24 через Chrome SpeechRecognition API.',
+		disclaimer: 'Bitrix24 — зарегистрированный товарный знак компании «1С-Битрикс». Данное расширение не является официальным продуктом Bitrix24 и не одобрено компанией «1С-Битрикс».',
 		updates: 'Обновления',
 		changelog_voice: 'Добавлен голосовой ввод сообщений в чатах.',
 		changelog_focus: 'Режим фокуса для общения без отвлечений.',
