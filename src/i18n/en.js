@@ -26,7 +26,7 @@ export default {
 		updates: 'Updates',
 		changelog_voice: 'Added voice input for chat messages.',
 		changelog_focus: 'Focus mode for distraction-free chatting.',
-		changelog_initial: 'Initial release: secret reading, quick search.',
+		changelog_initial: 'Initial release: secret reading, quick search, focus mode and voice input.',
 	},
 	download: {
 		title: 'Download',

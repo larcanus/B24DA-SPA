@@ -6,7 +6,7 @@ const { t } = useI18n()
 <template>
   <section class="main-section">
     <div class="preview">
-      <img src="../assets/chat-preview-ru.png" alt="Extension Preview" class="preview-img" />
+      <img src="../assets/preview.png" alt="Extension Preview" class="preview-img" />
       <div class="info">
         <h1>{{ t('main.title') }}</h1>
         <p class="lead">{{ t('main.description') }}</p>
@@ -51,9 +51,7 @@ const { t } = useI18n()
     <div class="updates">
       <h2>{{ t('main.updates') }}</h2>
       <ul>
-        <li>v1.2.0 – {{ t('main.changelog_voice') }}</li>
-        <li>v1.1.0 – {{ t('main.changelog_focus') }}</li>
-        <li>v1.0.0 – {{ t('main.changelog_initial') }}</li>
+        <li>v1.0 – {{ t('main.changelog_initial') }}</li>
       </ul>
     </div>
   </section>
@@ -71,12 +69,15 @@ const { t } = useI18n()
   gap: 2rem;
 }
 .preview-img {
-  width: 120px;
-  height: 120px;
+  display: block;
+  max-width: 510px;
+  max-height: 280px;
+  width: 100%;
+  height: auto;
   border-radius: 16px;
   box-shadow: 0 2px 16px #0004;
   background: #222;
-  object-fit: cover;
+  object-fit: contain;
 }
 .info {
   flex: 1;
