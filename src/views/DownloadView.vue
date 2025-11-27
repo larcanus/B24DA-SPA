@@ -5,7 +5,9 @@ const { t } = useI18n()
   <section>
     <h1>{{ t('download.title') }}</h1>
     <p>{{ t('download.description') }}</p>
-    <div class="downloads">
+
+    <!-- Стандартная установка -->
+    <div class="standard-install">
       <a class="download-btn webstore-btn" href="https://chromewebstore.google.com/detail/ebdplbiheaelabpbnhkjiigfhmhnflog" target="_blank" rel="noopener noreferrer">
         <span class="icon">
           <!-- Chrome Web Store icon -->
@@ -20,6 +22,16 @@ const { t } = useI18n()
         {{ t('download.webstore_btn') }}
         <span class="btn-info">{{ t('download.webstore_info') }}</span>
       </a>
+    </div>
+
+    <!-- Разделитель -->
+    <div class="divider">
+      <h2>{{ t('download.custom_section_title') }}</h2>
+      <p class="custom-description">{{ t('download.custom_section_description') }}</p>
+    </div>
+
+    <!-- Загрузки для нестандартных порталов -->
+    <div class="downloads">
       <a class="download-btn" href="/files/Bitrix24AD-extension.zip" download>
         <span class="icon">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -45,6 +57,7 @@ const { t } = useI18n()
         <span class="btn-info">{{ t('download.repackager_mac_info') }}</span>
       </a>
     </div>
+
     <div class="mac-warning">
       <strong>⚠️ {{ t('download.mac_warning_title') }}</strong>
       <p>{{ t('download.mac_warning_text') }}</p>
@@ -53,6 +66,7 @@ const { t } = useI18n()
         <li>{{ t('download.mac_warning_step2') }}</li>
       </ol>
     </div>
+
     <div class="instructions">
       <h2>{{ t('download.repackager_title') }}</h2>
       <ol>
@@ -66,12 +80,35 @@ const { t } = useI18n()
     </div>
   </section>
 </template><style scoped>
+.standard-install {
+  margin-bottom: 3rem;
+}
+
+.divider {
+  margin: 3rem 0 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.divider h2 {
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+}
+
+.custom-description {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
 .downloads {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .download-btn {
   display: flex;
   align-items: center;
@@ -87,25 +124,31 @@ const { t } = useI18n()
   transition: background 0.2s;
   position: relative;
 }
+
 .download-btn:hover {
   background: #a259e6;
 }
+
 .webstore-btn {
   background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC04 100%);
 }
+
 .webstore-btn:hover {
   background: linear-gradient(135deg, #357ae8 0%, #2d9348 50%, #f0b000 100%);
 }
+
 .icon {
   display: flex;
   align-items: center;
 }
+
 .btn-info {
   margin-left: 1rem;
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.8);
   font-weight: normal;
 }
+
 .mac-warning {
   background: #2d1b4c;
   color: #ffd6e0;
@@ -115,12 +158,15 @@ const { t } = useI18n()
   border-radius: 8px;
   font-size: 1rem;
 }
+
 .mac-warning strong {
   color: #ff5f7e;
 }
+
 .instructions {
   margin-top: 2rem;
 }
+
 .note {
   color: var(--text-secondary);
   margin-top: 1rem;
