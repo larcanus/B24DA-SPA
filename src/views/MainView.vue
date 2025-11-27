@@ -111,4 +111,15 @@ const { t } = useI18n()
   color: #888;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .preview {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .preview-img {
+    max-width: 100%;
+  }
+}
 </style>
