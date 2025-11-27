@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import Navbar from '@/components/Navbar.vue'
     <main>
       <router-view />
     </main>
+    <Footer />
   </div>
 </template>
 
@@ -31,9 +33,12 @@ body {
 #app {
   min-height: 100vh;
   background: var(--bg);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
+  flex: 1;
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;

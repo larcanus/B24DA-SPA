@@ -5,6 +5,11 @@ export default {
 		faq: 'FAQ',
 		lang: 'RU',
 	},
+	footer: {
+		author: 'Author',
+		contact: 'Contact',
+		hide: 'Hide',
+	},
 	main: {
 		title: 'Chrome Extension for Bitrix24: Secret Productivity Hacks',
 		description: 'Unlock hidden features and boost your Bitrix24 experience with our Chrome extension.',

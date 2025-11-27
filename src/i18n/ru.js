@@ -5,6 +5,11 @@ export default {
 		faq: 'FAQ',
 		lang: 'EN',
 	},
+	footer: {
+		author: 'Автор',
+		contact: 'Контакт',
+		hide: 'Скрыть',
+	},
 	main: {
 		title: 'Расширение Chrome для Bitrix24: секретные хаки продуктивности',
 		description: 'Откройте скрытые возможности и прокачайте Bitrix24 с нашим расширением.',
