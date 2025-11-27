@@ -33,6 +33,8 @@ export default {
 		title: 'Download',
 		description: 'Get the Chrome extension and Bitrix24 Repackager for custom portals.',
 		extension_btn: 'Download Extension',
+		webstore_btn: "Install from Chrome Web Store",
+		webstore_info: "Recommended",
 		repackager_win_btn: 'Download Bitrix24 Repackager for Windows',
 		repackager_win_info: 'Windows 10+ (x64)',
 		repackager_mac_btn: 'Download Bitrix24 Repackager for macOS',

@@ -1,13 +1,25 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
-</script>
-
-<template>
+</script><template>
   <section>
     <h1>{{ t('download.title') }}</h1>
     <p>{{ t('download.description') }}</p>
     <div class="downloads">
+      <a class="download-btn webstore-btn" href="https://chromewebstore.google.com/detail/ebdplbiheaelabpbnhkjiigfhmhnflog" target="_blank" rel="noopener noreferrer">
+        <span class="icon">
+          <!-- Chrome Web Store icon -->
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" fill="#fff"/>
+            <path d="M16 8a8 8 0 0 0-6.93 4h6.93l4-6.93A8 8 0 0 0 16 8Z" fill="#EA4335"/>
+            <path d="M8 16a8 8 0 0 0 4 6.93l4-6.93H8Z" fill="#FBBC04"/>
+            <path d="M16 24a8 8 0 0 0 6.93-4l-6.93-4v8Z" fill="#34A853"/>
+            <circle cx="16" cy="16" r="4" fill="#4285F4"/>
+          </svg>
+        </span>
+        {{ t('download.webstore_btn') }}
+        <span class="btn-info">{{ t('download.webstore_info') }}</span>
+      </a>
       <a class="download-btn" href="/files/Bitrix24AD-extension.zip" download>
         <span class="icon">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -53,9 +65,7 @@ const { t } = useI18n()
       <p class="note">{{ t('download.repackager_note') }}</p>
     </div>
   </section>
-</template>
-
-<style scoped>
+</template><style scoped>
 .downloads {
   margin-bottom: 2rem;
   display: flex;
@@ -79,6 +89,12 @@ const { t } = useI18n()
 }
 .download-btn:hover {
   background: #a259e6;
+}
+.webstore-btn {
+  background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC04 100%);
+}
+.webstore-btn:hover {
+  background: linear-gradient(135deg, #357ae8 0%, #2d9348 50%, #f0b000 100%);
 }
 .icon {
   display: flex;

@@ -33,6 +33,8 @@ export default {
 		title: 'Скачать',
 		description: 'Загрузите расширение Chrome и Bitrix24 Repackager для нестандартных порталов.',
 		extension_btn: 'Скачать расширение',
+		webstore_btn: "Установить из Chrome Web Store",
+		webstore_info: "Рекомендуется",
 		repackager_win_btn: 'Скачать Bitrix24 Repackager для Windows',
 		repackager_win_info: 'Windows 10+ (x64)',
 		repackager_mac_btn: 'Скачать Bitrix24 Repackager для macOS',
