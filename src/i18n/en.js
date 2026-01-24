@@ -33,6 +33,8 @@ export default {
 		changelog_voice: 'Added voice input for chat messages.',
 		changelog_focus: 'Focus mode for distraction-free chatting.',
 		changelog_initial: 'Initial release: secret reading, quick search, focus mode and voice input.',
+		changelog_1_1: 'Improved compatibility with new messenger versions.',
+		changelog_1_2: 'Added support for new reactions and stickers.',
 	},
 	download: {
 		title: 'Download',

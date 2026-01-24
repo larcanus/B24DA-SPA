@@ -51,6 +51,8 @@ const { t } = useI18n()
     <div class="updates">
       <h2>{{ t('main.updates') }}</h2>
       <ul>
+        <li>v1.2 – {{ t('main.changelog_1_2') }}</li>
+        <li>v1.1 – {{ t('main.changelog_1_1') }}</li>
         <li>v1.0 – {{ t('main.changelog_initial') }}</li>
       </ul>
     </div>
