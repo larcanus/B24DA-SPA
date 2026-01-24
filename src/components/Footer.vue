@@ -1,28 +1,21 @@
 <script setup>
-import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
-const showEmail = ref(false)
 
-function toggleEmail() {
-  showEmail.value = !showEmail.value
+function openWebsite() {
+  window.open('https://alexrulser.com/', '_blank', 'noopener,noreferrer')
 }
 </script>
 
 <template>
   <footer class="app-footer">
     <div class="footer-content">
-      <span>© 2025 | {{ t('footer.author') }}: AlexRulSer | v1.0.2</span>
-      <button v-if="!showEmail" @click="toggleEmail" class="contact-link">
-        {{ t('footer.contact') }}
+      <span>© 2025 | {{ t('footer.author') }}: </span>
+      <button @click="openWebsite" class="author-link">
+        AlexRulSer
       </button>
-      <template v-else>
-        <span class="email">alex.rulser@gmail.com</span>
-        <button @click="toggleEmail" class="contact-link">
-          {{ t('footer.hide') }}
-        </button>
-      </template>
+      <span> | v1.0.2</span>
     </div>
   </footer>
 </template>
@@ -43,11 +36,11 @@ function toggleEmail() {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
   flex-wrap: wrap;
 }
 
-.contact-link {
+.author-link {
   background: none;
   border: none;
   color: var(--accent);
@@ -60,15 +53,11 @@ function toggleEmail() {
   text-decoration: none;
   transition: opacity 0.2s;
   vertical-align: baseline;
+  font-weight: 500;
 }
 
-.contact-link:hover {
+.author-link:hover {
   opacity: 0.8;
   text-decoration: underline;
-}
-
-.email {
-  color: var(--accent);
-  font-weight: 500;
 }
 </style>
