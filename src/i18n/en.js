@@ -28,6 +28,8 @@ export default {
 		feature_focus_mode_desc: 'Hide all unnecessary UI elements and focus solely on the chat input.',
 		feature_voice_input_title: 'Voice input in Bitrix24 chats',
 		feature_voice_input_desc: 'Use your voice to dictate messages directly in Bitrix24 chats via the Chrome SpeechRecognition API.',
+		feature_bb_code_title: 'Quick BB Code Widget.',
+		feature_bb_code_desc: 'Format messages faster with a clickable list of popular BB codes-insert colors, icon, size, and links without memorizing syntax.',
 		disclaimer: 'Bitrix24 is a registered trademark of 1C-Bitrix. This extension is not an official Bitrix24 product and is not approved by 1C-Bitrix.',
 		updates: 'Updates',
 		changelog_voice: 'Added voice input for chat messages.',

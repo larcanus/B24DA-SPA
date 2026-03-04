@@ -45,12 +45,19 @@ const { t } = useI18n()
           <br />
           {{ t('main.feature_voice_input_desc') }}
         </li>
+        <li>
+          <strong>📝 {{ t('main.feature_bb_code_title') }}</strong>
+          <br />
+          {{ t('main.feature_bb_code_desc') }}
+        </li>
       </ul>
     </div>
 
     <div class="updates">
       <h2>{{ t('main.updates') }}</h2>
       <ul>
+        <li>v1.4 – {{ t('main.changelog_1_4') }}</li>
+        <li>v1.3 – {{ t('main.changelog_1_3') }}</li>
         <li>v1.2 – {{ t('main.changelog_1_2') }}</li>
         <li>v1.1 – {{ t('main.changelog_1_1') }}</li>
         <li>v1.0 – {{ t('main.changelog_initial') }}</li>
