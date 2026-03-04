@@ -32,7 +32,7 @@ const { t } = useI18n()
 
     <!-- Загрузки для нестандартных порталов -->
     <div class="downloads">
-      <a class="download-btn" href="/files/Bitrix24AD-extension.zip" download>
+      <a class="download-btn" href="/files/Bitrix24AD-extension2.zip" download>
         <span class="icon">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M10 2v10m0 0l-4-4m4 4l4-4M4 16h12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -35,6 +35,8 @@ export default {
 		changelog_initial: 'Initial release: secret reading, quick search, focus mode and voice input.',
 		changelog_1_1: 'Improved compatibility with new messenger versions.',
 		changelog_1_2: 'Added support for new reactions and stickers.',
+		changelog_1_3: "Added widget with bb-code list",
+		changelog_1_4: "Fixes and optimization",
 	},
 	download: {
 		title: 'Download',
